@@ -49,6 +49,15 @@
                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCD-Z3-0oh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by1-Rx-0r2">
+                                <rect key="frame" x="33" y="332" width="324" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="bMy-ss-1ku"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,6 +65,7 @@
                             <constraint firstItem="NGT-fl-JOH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="2z1-YX-dV0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fK2-jH-YzV" secondAttribute="trailing" constant="33" id="7pr-tI-124"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1NC-zu-dcY" secondAttribute="trailing" constant="33" id="AAl-5u-w5a"/>
+                            <constraint firstItem="by1-Rx-0r2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="BOd-gc-01M"/>
                             <constraint firstItem="9gJ-8r-mH0" firstAttribute="top" secondItem="fK2-jH-YzV" secondAttribute="bottom" constant="10" id="Dh0-fm-OAC"/>
                             <constraint firstItem="Jor-tc-RQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="GhP-LJ-2cF"/>
                             <constraint firstItem="0tu-H8-P0C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="HzT-FK-66f"/>
@@ -69,7 +79,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9gJ-8r-mH0" secondAttribute="trailing" constant="33" id="b7G-0v-6kQ"/>
                             <constraint firstItem="NGT-fl-JOH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="fc1-gf-l6y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NGT-fl-JOH" secondAttribute="trailing" constant="33" id="quQ-PH-ns7"/>
+                            <constraint firstItem="by1-Rx-0r2" firstAttribute="top" secondItem="Jor-tc-RQA" secondAttribute="bottom" constant="20" id="rWz-e5-pe5"/>
                             <constraint firstItem="fK2-jH-YzV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="vqt-Sa-DIn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="by1-Rx-0r2" secondAttribute="trailing" constant="33" id="vw3-h1-II5"/>
                             <constraint firstItem="9gJ-8r-mH0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="z5l-oz-awG"/>
                         </constraints>
                     </view>
@@ -78,12 +90,13 @@
                         <outlet property="currentSavings" destination="9gJ-8r-mH0" id="xZS-li-a4I"/>
                         <outlet property="interestRate" destination="fK2-jH-YzV" id="BhU-pm-E4W"/>
                         <outlet property="monthlyInvestments" destination="NGT-fl-JOH" id="Ghq-qy-N00"/>
+                        <outlet property="result" destination="by1-Rx-0r2" id="PRs-MB-GAm"/>
                         <outlet property="retirementAge" destination="1NC-zu-dcY" id="pHW-Za-Fka"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="-2"/>
+            <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>

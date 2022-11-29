@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var currentSavings: UITextField!
     
+    @IBOutlet weak var result: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,7 +39,13 @@ class ViewController: UIViewController {
 
     @IBAction func calculate(_ sender: Any) {
         
+        let current_age : Int? = Int(currentAge.text!)
+        let retirement_age : Int? = Int(retirementAge.text!)
+        let monthly_investment : Float? = Float(monthlyInvestments.text!)
+        let current_savings : Float? = Float(currentSavings.text!)
+        let interest_rate : Float? = Float(interestRate.text!)
         
+        result.text = "If you save $\(monthly_investment!) every month for \(retirement_age! - current_age!) years, and invest that money plus your current investment of $\(current_savings!) at a \(interest_rate!)% anual interest rate, you will have $X by the time you are \(retirement_age!)"
         
     }
     
